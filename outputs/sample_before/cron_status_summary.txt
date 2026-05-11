@@ -1,0 +1,7 @@
+overnight maintenance summary:
+
+no task failed twice in this fixture.
+telegram responded.
+whatsapp status was not checked in this fixture.
+
+a human should review the channel status before depending on outbound messages today.

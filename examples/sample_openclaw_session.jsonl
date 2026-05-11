@@ -1,0 +1,4 @@
+{"type":"message","role":"user","content":"draft a refund reply"}
+{"type":"tool_call","tool_name":"read_input","tokens":120,"cost_usd":0.0002}
+{"type":"tool_call","tool_name":"draft_response","tokens":420,"cost_usd":0.0010}
+{"type":"message","role":"assistant","content":"draft reply created. approval required before sending."}

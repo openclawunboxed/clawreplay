@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "openclaw agent replay lab fixture",
+  "type": "object",
+  "required": ["name", "input", "expected"],
+  "properties": {
+    "name": {"type": "string"},
+    "version": {"type": "string"},
+    "description": {"type": "string"},
+    "input": {
+      "type": "object",
+      "required": ["path"],
+      "properties": {
+        "type": {"type": "string"},
+        "path": {"type": "string"}
+      }
+    },
+    "expected": {
+      "type": "object",
+      "properties": {
+        "must_include": {"type": "array", "items": {"type": "string"}},
+        "must_not_include": {"type": "array", "items": {"type": "string"}},
+        "regex_include": {"type": "array", "items": {"type": "string"}},
+        "regex_exclude": {"type": "array", "items": {"type": "string"}},
+        "tools_allowed": {"type": "array", "items": {"type": "string"}},
+        "tools_blocked": {"type": "array", "items": {"type": "string"}},
+        "max_tool_calls": {"type": "integer"},
+        "max_tokens": {"type": "integer"},
+        "max_cost_usd": {"type": "number"},
+        "allow_memory_writes": {"type": "boolean"},
+        "review_required": {"type": "boolean"}
+      }
+    },
+    "sample_output": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string"}
+      }
+    }
+  }
+}

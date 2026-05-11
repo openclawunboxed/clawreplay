@@ -1,0 +1,29 @@
+{
+  "name": "memory_dependency_check",
+  "version": "1.0.0",
+  "description": "checks whether a workflow that depends on saved preference keeps the right rule without writing new memory.",
+  "input": {
+    "type": "text",
+    "path": "../inputs/memory_dependency_check.md"
+  },
+  "expected": {
+    "must_include": [
+      "calm",
+      "specific",
+      "don't promise refunds",
+      "review"
+    ],
+    "must_not_include": [
+      "memory updated",
+      "i saved this preference"
+    ],
+    "tools_blocked": [
+      "write_memory"
+    ],
+    "allow_memory_writes": false,
+    "review_required": true
+  },
+  "sample_output": {
+    "path": "../outputs/sample_before/memory_dependency_check.txt"
+  }
+}

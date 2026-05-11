@@ -1,0 +1,5 @@
+using saved business preference:
+
+support tone should stay calm and specific. don't promise refunds before order lookup. ask for missing order details first and mark the reply for review.
+
+no permanent memory update was needed.
